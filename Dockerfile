@@ -1,6 +1,6 @@
 # 第一阶段：基于完整的 Go 镜像构建应用
 # 使用官方 Go 镜像作为构建环境
-FROM golang:1.21
+FROM golang:latest AS builder
 
 # 设置工作目录
 WORKDIR /app
